@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Design System - Help Desk</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <!-- =====================================================
+             ENCABEZADO
+        ====================================================== -->
+
+      <header class="text-center mb-lg">
+        <h1>Design System - Help Desk</h1>
+
+        <p>
+          Biblioteca de componentes de interfaz de usuario desarrollada con
+          HTML5 y CSS3. Este UI Kit establece la línea gráfica para el sistema
+          de gestión de incidentes (Help Desk).
+        </p>
+      </header>
+
+      <!-- =====================================================
+             BOTONES
+        ====================================================== -->
+
+      <section class="demo-section">
+        <h2>Botones</h2>
+
+        <p class="mb-md">
+          Componentes utilizados para ejecutar acciones principales, secundarias
+          y críticas dentro del sistema Help Desk.
+        </p>
+
+        <button class="btn btn-primary">Botón Primario</button>
+        <button class="btn btn-secondary">Botón Secundario</button>
+        <button class="btn btn-danger">Botón Peligro</button>
+      </section>
+
+      <!-- =====================================================
+             FORMULARIOS
+        ====================================================== -->
+
+      <section class="demo-section">
+        <h2>Formularios</h2>
+
+        <p class="mb-md">
+          Componentes utilizados para la captura de información en el registro y
+          gestión de tickets.
+        </p>
+
+        <input
+          class="input"
+          type="text"
+          placeholder="Ingrese el asunto del ticket"
+        />
+
+        <select class="select">
+          <option selected disabled>Seleccione la prioridad</option>
+          <option>Alta</option>
+          <option>Media</option>
+          <option>Baja</option>
+        </select>
+      </section>
+
+      <!-- =====================================================
+             TARJETAS (con badge)
+        ====================================================== -->
+
+      <section class="demo-section">
+        <h2>Tarjeta de Ticket</h2>
+
+        <p class="mb-md">
+          Ejemplo de una tarjeta utilizada para mostrar la información principal
+          de un incidente registrado.
+        </p>
+
+        <div class="card">
+          <div class="card-title">Ticket #1024 - Error de inicio de sesión</div>
+
+          <div class="card-description">
+            El usuario reporta que no puede acceder al sistema Help Desk
+            utilizando sus credenciales institucionales.
+          </div>
+
+          <div class="card-footer">
+            <span>Usuario: Juan Pérez</span>
+
+            <span class="badge badge-high">Alta</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- =====================================================
+             BADGES
+        ====================================================== -->
+
+      <section class="demo-section">
+        <h2>Prioridades del Ticket</h2>
+
+        <p class="mb-md">
+          Etiquetas visuales utilizadas para identificar el nivel de prioridad
+          asignado a un ticket.
+        </p>
+
+        <span class="badge badge-high">Alta</span>
+        <span class="badge badge-medium">Media</span>
+        <span class="badge badge-low">Baja</span>
+      </section>
+    </div>
+  </body>
+</html>
