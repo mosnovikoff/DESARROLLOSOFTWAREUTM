@@ -3,10 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="design-system/style.css" />
     <title>Help Desk - Reportar Incidente</title>
   </head>
+
   <body>
-    <header>
+    <header class="text-center mb-lg">
       <h1>Reporte de Incidentes</h1>
       <p>Registro de nuevos incidentes en el sistema Help Desk</p>
     </header>
@@ -19,44 +21,68 @@
       </ul>
     </nav>
 
-    <main>
+    <main class="container">
       <section>
         <h2>Formulario de Reporte de Incidentes</h2>
         <p>Complete la información para registrar un nuevo incidente.</p>
-        <form>
-          <label for="titulo">Título del incidente:</label><br />
-          <input type="text" id="titulo" name="titulo" /><br /><br />
 
-          <label for="categoria">Categoría:</label><br />
-          <select id="categoria" name="categoria">
+        <form>
+          <!-- TÍTULO -->
+          <label for="titulo">Título del incidente:</label>
+          <input
+            class="input"
+            type="text"
+            id="titulo"
+            name="titulo"
+            placeholder="Ej: Error en red"
+          />
+
+          <!-- CATEGORÍA -->
+          <label for="categoria">Categoría:</label>
+          <select class="select" id="categoria" name="categoria">
             <option value="red">Red</option>
             <option value="hardware">Hardware</option>
-            <option value="software">Software</option></select
-          ><br /><br />
+            <option value="software">Software</option>
+          </select>
 
-          <label>Prioridad:</label><br />
-          <input type="radio" id="alta" name="prioridad" value="alta" />
-          <label for="alta">Alta</label><br />
-          <input type="radio" id="media" name="prioridad" value="media" />
-          <label for="media">Media</label><br />
-          <input type="radio" id="baja" name="prioridad" value="baja" />
-          <label for="baja">Baja</label><br /><br />
+          <!-- PRIORIDAD -->
+          <label>Prioridad:</label>
 
-          <label for="descripcion">Descripción del incidente:</label><br />
+          <label>
+            <input type="radio" name="prioridad" value="alta" />
+            Alta
+          </label>
+
+          <label>
+            <input type="radio" name="prioridad" value="media" />
+            Media
+          </label>
+
+          <label>
+            <input type="radio" name="prioridad" value="baja" />
+            Baja
+          </label>
+
+          <!-- DESCRIPCIÓN -->
+          <label for="descripcion">Descripción del incidente:</label>
           <textarea
+            class="input"
             id="descripcion"
             name="descripcion"
             rows="5"
-            cols="50"
-          ></textarea
-          ><br /><br />
+          ></textarea>
 
-          <input type="submit" value="Registrar Incidente" />
+          <!-- BOTÓN -->
+          <input
+            class="btn btn-primary"
+            type="submit"
+            value="Registrar Incidente"
+          />
         </form>
       </section>
     </main>
 
-    <footer>
+    <footer class="footer">
       <p>Universidad Técnica de Manabí - Desarrollo de Sistemas Informáticos</p>
       <p>Sistema Help Desk - 2026</p>
     </footer>

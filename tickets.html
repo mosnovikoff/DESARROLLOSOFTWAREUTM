@@ -3,10 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="design-system/style.css" />
     <title>Help Desk - Tickets</title>
   </head>
+
   <body>
-    <header>
+    <header class="text-center mb-lg">
       <h1>Listado de Tickets</h1>
       <p>Consulta y seguimiento de incidentes registrados</p>
     </header>
@@ -19,52 +21,54 @@
       </ul>
     </nav>
 
-    <main>
+    <main class="container">
       <section>
         <h2>Tickets Registrados</h2>
         <p>Listado de incidentes reportados en el sistema.</p>
 
-        <table border="1">
-          <thead>
-            <tr>
-              <th>ID</th>
-              <th>Categoría</th>
-              <th>Prioridad</th>
-              <th>Estado</th>
-              <th>Técnico Asignado</th>
-            </tr>
-          </thead>
+        <div class="card">
+          <table>
+            <thead>
+              <tr>
+                <th>ID</th>
+                <th>Categoría</th>
+                <th>Prioridad</th>
+                <th>Estado</th>
+                <th>Técnico Asignado</th>
+              </tr>
+            </thead>
 
-          <tbody>
-            <tr>
-              <td>001</td>
-              <td>Red</td>
-              <td>Alta</td>
-              <td>Abierto</td>
-              <td>Juan Pérez</td>
-            </tr>
+            <tbody>
+              <tr>
+                <td>001</td>
+                <td>Red</td>
+                <td><span class="badge badge-high">Alta</span></td>
+                <td>Abierto</td>
+                <td>Juan Pérez</td>
+              </tr>
 
-            <tr>
-              <td>002</td>
-              <td>Hardware</td>
-              <td>Media</td>
-              <td>En Proceso</td>
-              <td>María López</td>
-            </tr>
+              <tr>
+                <td>002</td>
+                <td>Hardware</td>
+                <td><span class="badge badge-medium">Media</span></td>
+                <td>En Proceso</td>
+                <td>María López</td>
+              </tr>
 
-            <tr>
-              <td>003</td>
-              <td>Software</td>
-              <td>Baja</td>
-              <td>Resuelto</td>
-              <td>Carlos García</td>
-            </tr>
-          </tbody>
-        </table>
+              <tr>
+                <td>003</td>
+                <td>Software</td>
+                <td><span class="badge badge-low">Baja</span></td>
+                <td>Resuelto</td>
+                <td>Carlos García</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
       </section>
     </main>
 
-    <footer>
+    <footer class="footer">
       <p>Universidad Técnica de Manabí - Desarrollo de Sistemas Informáticos</p>
       <p>Sistema Help Desk - 2026</p>
     </footer>

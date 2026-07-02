@@ -3,23 +3,24 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="design-system/style.css" />
     <title>Help Desk - Dashboard</title>
   </head>
   <body>
-    <header>
+    <header class="text-center mb-lg">
       <h1>Sistema Help Desk</h1>
       <p>Panel principal de gestión de incidentes</p>
     </header>
 
-    <nav>
-      <ul>
+    <nav class="mb-lg">
+      <ul class="flex-center">
         <li><a href="index.html">Inicio</a></li>
         <li><a href="reportar.html">Reportar Incidente</a></li>
         <li><a href="tickets.html">Tickets</a></li>
       </ul>
     </nav>
 
-    <main>
+    <main class="container">
       <section>
         <h2>Bienvenido al Sistema Help Desk</h2>
 
@@ -28,29 +29,31 @@
           reportados por los usuarios.
         </p>
 
-        <article>
-          <h3>Total de Tickets</h3>
-          <p>25</p>
-        </article>
+        <div class="dashboard-cards">
+          <article class="card">
+            <h3>Total de Tickets</h3>
+            <p>25</p>
+          </article>
 
-        <article>
-          <h3>Tickets Abiertos</h3>
-          <p>10</p>
-        </article>
+          <article class="card">
+            <h3>Tickets Abiertos</h3>
+            <p>10</p>
+          </article>
 
-        <article>
-          <h3>Tickets en Proceso</h3>
-          <p>8</p>
-        </article>
+          <article class="card">
+            <h3>Tickets en Proceso</h3>
+            <p>8</p>
+          </article>
 
-        <article>
-          <h3>Tickets Resueltos</h3>
-          <p>7</p>
-        </article>
+          <article class="card">
+            <h3>Tickets Resueltos</h3>
+            <p>7</p>
+          </article>
+        </div>
       </section>
     </main>
 
-    <footer>
+    <footer class="footer">
       <p>Universidad Técnica de Manabí - Desarrollo de Sistemas Informáticos</p>
       <p>Sistema Help Desk - 2026</p>
     </footer>
